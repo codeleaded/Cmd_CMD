@@ -7,7 +7,7 @@
 #endif
 
 int main(int argc,const char *argv[]){
-    Session s = Session_New();
+    Session s = Session_New(INPUTKEYBOARD_PATH);
     Cmd cmd = Cmd_Make(&s);
 
     Cmd_StartSTDConsole(&s,&cmd);
